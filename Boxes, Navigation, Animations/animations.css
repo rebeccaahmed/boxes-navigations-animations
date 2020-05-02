@@ -1,0 +1,49 @@
+/*a-1 Animation*/
+
+@keyframes rwbFade{
+    0% {background-color: red;}
+    50% {background-color: white;}
+    100% {background-color: blue;}
+}
+
+.a-1 .box{
+    width: 100px;
+    height: 100px;
+    animation: rwbFade 3s linear 0s infinite forwards;
+}
+
+/*a-2 Animation*/
+
+@keyframes RtoL{
+    0% {left: 0%}
+    50% {left: 100%}
+    100% {left: 0%}
+}
+
+.a-2 .box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: black;
+    animation: RtoL 2s linear 0s alternate infinite;
+}
+
+/*a-3 Animation*/
+
+@keyframes move{
+    0% {left: 0px}
+    16.67% {left: 100px}
+    33.33% {left: 100px; transform: rotate(45deg)}
+    50% {left: 100px; transform: rotate(45deg); transform: scale(1.5)}
+    66.67% {left: 100px; transform: rotate(45deg); transform: scale(1)}
+    83.34% {left: 100px; transform: rotate(-45deg)}
+    100% {left: 0px}
+}
+
+.a-3 .box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: greenyellow;
+    animation: move 8s linear 0s infinite; 
+}
